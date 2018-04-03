@@ -5,7 +5,6 @@ tags: ITLengine
 layout: default
 ---
 
-# First few words #
 Hello World. This actually the first post I ever wrote seen in the public. That's creepy. Well maybe not ... we will see. Phew the first few words I ever wrote in a blog are done. :D
 
 # Intentions #
