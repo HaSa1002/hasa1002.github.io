@@ -2,7 +2,7 @@
 title:  "My first Post!"
 date:   2018-04-04 00:40:01 +0200
 tags: ITLengine worklog 
-layout: post
+layout: default
 ---
 
 Hello World. This actually the first post I ever wrote seen in the public. That's creepy. Well maybe not ... we will see. Phew the first few words I ever wrote in a blog are done. :D
