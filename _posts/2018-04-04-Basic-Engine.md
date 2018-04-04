@@ -3,6 +3,7 @@ title:  "#2 The Basic Engine"
 date:   2018-04-04 18:30:00 +0200
 tags: ITLengine worklog lua c++
 layout: default
+comments: true
 ---
 
 As I said yesterday, today is the moment, I show a lot of the engine of today’s build. It will get technical, but if it gets un-understandable tell me.
