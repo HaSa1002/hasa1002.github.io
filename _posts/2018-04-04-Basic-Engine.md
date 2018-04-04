@@ -5,31 +5,29 @@ tags: ITLengine worklog lua c++
 layout: default
 ---
 
-
-
 As I said yesterday, today is the moment, I show a lot of the engine of today’s build. It will get technical, but if it gets un-understandable tell me.
-
-<link rel="stylesheet" href="{{"css/code.css" | absolute_url }}">
 
 # How it works – The Lua Part #
 We have a little Lua to initialize the engine with all the needed tables. If they aren’t existing, the engine is hopelessly lost.
 
-<pre style="font-family:Consolas;font-size:13;color:black;background:white;">scenes&nbsp;=&nbsp;{}
-localisations&nbsp;=&nbsp;{}
-game&nbsp;=&nbsp;{}</pre>
+<pre class="vs-code">scenes&nbsp;<span class="operator">=</span>&nbsp;{}
+localisations&nbsp;<span class="operator">=</span>&nbsp;{}
+game&nbsp;<span class="operator">=</span>&nbsp;{}</pre>
 
 As you see we have a scenes table, which obviously holds all the scenes, a localizations table which isn’t needed really in the engine now and finally a game table.
 I use the game table for saving configurations of the game, like the language or other game related settings.
 Once we initialized the tables we fill them.
 
-<pre style="font-family:Consolas;font-size:13;color:black;background:white;"><span style="color:blue;">dofile</span>&nbsp;<span style="color:#a31515;">&quot;locals/en.lang&quot;</span>
-<span style="color:blue;">dofile</span>&nbsp;<span style="color:#a31515;">&quot;locals/de.lang&quot;</span>
+<pre class="vs-code"><span class="keyword">dofile</span>&nbsp;<span class="string">&quot;locals/en.lang&quot;</span>
+<span class="keyword">dofile</span>&nbsp;<span class="string">&quot;locals/de.lang&quot;</span>
  
-<span style="color:blue;">dofile</span>&nbsp;<span style="color:#a31515;">&quot;scenes/lua_testscene.pcscene&quot;</span>
+<span class="keyword">dofile</span>&nbsp;<span class="string">&quot;scenes/lua_testscene.pcscene&quot;</span>
  
-<span style="color:green;">--&nbsp;Now&nbsp;some&nbsp;game&nbsp;config
-</span><span style="color:blue;">dofile</span>&nbsp;<span style="color:#a31515;">&quot;Game.conf&quot;</span>
-game.stdlang&nbsp;=&nbsp;<span style="color:#a31515;">&quot;en&quot;</span></pre>
+<span class="comment">--&nbsp;Load&nbsp;the&nbsp;configs
+</span>game.<span class="identifier">stdlang</span>&nbsp;<span class="operator">=</span>&nbsp;<span class="string">&quot;en&quot;</span>
+game.<span class="identifier">lang</span>&nbsp;<span class="operator">=</span>&nbsp;<span class="string">&quot;en&quot;</span>
+ 
+<span class="keyword">dofile</span>&nbsp;<span class="string">&quot;Game.conf&quot;</span></pre>
 
 That’s the moment it gets annoying: We must load every single file, and as I am to lazy to write a function, which iterates through a folder, we must add them manually to the file or write them as you wish. All the engine internally does is to execute this single “Engine.lua”. Everything else is in your hand! Let’s see how a scene file looks like:
 
