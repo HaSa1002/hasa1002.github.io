@@ -26,7 +26,7 @@
       {{ content }}
 
       {% if page.comments %}
-      <a href={{page.url | append: "#disqus_thread"}}>Comment</a>
+      <a class="disqus-comment-count" href={{page.url | append: "#disqus_thread"}} data-disqus-url="{{page.url}}">Comment</a>
       <div id="disqus_thread"></div>
       <script>
       var disqus_config = function () {
