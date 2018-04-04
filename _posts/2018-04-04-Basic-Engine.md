@@ -5,9 +5,7 @@ tags: ITLengine worklog lua c++
 layout: default
 ---
 
-<head>
-	<link rel="stylesheet" href="{{"css/code.css" | absolute_url }}">
-</head>
+<link rel="stylesheet" href="{{"css/code.css" | absolute_url }}">
 
 As I said yesterday, today is the moment, I show a lot of the engine of today’s build. It will get technical, but if it gets un-understandable tell me.
 
