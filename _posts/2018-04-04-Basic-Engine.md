@@ -73,7 +73,9 @@ That’s the moment it gets annoying: We must load every single file, and as I a
 This simple file results in this simple scene:
 ![Result]({{"/assets/2-result-scene.png" | absolute_url}})
 Even the callbacks are working:
+
 ![Callbacks]({{"/assets/2-output.png" | absolute_url}})
+
 Once we finished the loading of the file we are loading this specific scene - this get changed, don’t worry! Now we get to the interesting stuff in the engine:
 
 # How it works – The Static Part #
