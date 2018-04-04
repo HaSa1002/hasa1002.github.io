@@ -34,6 +34,9 @@ body {
 }
 
 a {
+  .n-style {
+    color: $header-heading-color;
+  }
   color: $body-link-color;
   text-decoration: none;
 
