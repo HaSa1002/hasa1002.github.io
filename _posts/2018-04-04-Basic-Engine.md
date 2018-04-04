@@ -68,9 +68,9 @@ That’s the moment it gets annoying: We must load every single file, and as I a
 <span style="color:blue;">return</span>&nbsp;scene</pre>
 
 This simple file results in this simple scene:
-![Result]({{"/assets/#2-result-scene.png" | absolute_url}})
+![Result]({{"/assets/2-result-scene.png" | absolute_url}})
 Even the callbacks are working:
-![Callbacks]({{"/assets/#2-output.png" | absolute_url}})
+![Callbacks]({{"/assets/2-output.png" | absolute_url}})
 Once we finished the loading of the file we are loading this specific scene - this get changed, don’t worry! Now we get to the interesting stuff in the engine:
 
 # How it works – The Static Part #
@@ -121,7 +121,7 @@ We don’t add a texture here, as we just want to have a callback. I could have 
 
 # How it works – The “Editor Mode” #
 For getting the in-engine editor nearer, I created a so called “editor mode”. You can switch it via pressing `F3`. In this mode we see all the objects (red), walkboxes (green) and zoomlines (blue). To get this displayed I iterate through the scene and save colored rectangles to a list. This list is then added to the GUI draw list, which is like the draw list, but reserved for the GUI. It simply gets drawn after the normal draw list, so our rectangles are always in the foreground. Since it’s pointless to always close and reload the engine when changing the scenes, we can press `Shift+F3` to reload the “Engine.lua” and so the scene. As a bonus, if you failed writing proper Lua, the engine just won’t display anything instead of crashing, unlike in the startup.
-![The editor mode]({{"/assets/#2-editor-mode.png" | absolute_url}})
+![The editor mode]({{"/assets/2-editor-mode.png" | absolute_url}})
 
 # What comes next? #
 The next step is allowing multiple scenes being loaded, so we can switch them easily. With that I take the first scene to the “Engine.lua” so we can start off capsuling Game and Engine completely. Afterwards I will add some functions to control the engine from Lua like a scene changer, displaying a subtitle or playing a sound. Once that is finished I start making some editor tools to get closer to an in-engine editor. The next blog post will be Saturday or Sunday, but eventually about the future of the blog, because next week starts school again and I won’t have the time I have right now.
