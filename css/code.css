@@ -1,0 +1,22 @@
+.vs-code {
+    font-family:Consolas;
+    font-size:13;
+    color:#dfdfbf;
+    background:#2c2c2c;
+}
+.vs-code .comment { color:#125c12;}
+.vs-code .keyword { color: #0004dd; }
+.vs-code .cppMacro { color: #5a5a5a}
+.vs-code .number { color: #83b7eb;}
+.vs-code .operator { color: #ddbfbf;}
+.vs-code .cppType { color:#8acccf; }
+.vs-code .cppMemberFunction { color:#c8c8c8; }
+.vs-code .cppMemberField { color: #dadada;}
+.vs-code .cppMemberOperator { color: #b4b4b4;}
+.vs-code .cppParameter { color:#7f7f7f; }
+.vs-code .cppEnumerator { color:#b8d7a3; }
+.vs-code .string { color:#dfaf8f; }
+.vs-code .cppLocalVariable { color:#c8c8c8; }
+.vs-code .cppGlobalVariable { color:#c8c8c8; }
+.vs-code .cppNamespace { color: #c8c8c8;}
+.vs-code .cppFunction { color: #c8c8c8;}
