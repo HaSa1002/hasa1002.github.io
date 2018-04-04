@@ -30,7 +30,7 @@ game.<span class="identifier">lang</span>&nbsp;<span class="operator">=</span>&n
  
 <span class="keyword">dofile</span>&nbsp;<span class="string">&quot;Game.conf&quot;</span></pre>
 
-That’s the moment it gets annoying: We must load every single file, and as I am to lazy to write a function, which iterates through a folder, we must add them manually to the file or write them as you wish. All the engine internally does is to execute this single “Engine.lua”. Everything else is in your hand! Let’s see how a scene file looks like:
+That’s the moment it gets annoying: We must load every single file, and as I am to lazy to write a function, which iterates through a folder, we must add them manually to the file or write them as you wish. All the engine does internally is executing this single “Engine.lua”. Everything else is in your hand! Let’s see how a scene file looks like:
 
 # How it works – The Scene File #
 
@@ -123,7 +123,7 @@ As you saw earlier we had one line which was different:
 <pre class="vs-code">{<span class="string">&quot;r800,600&quot;</span>,&nbsp;<span class="number">200</span>,&nbsp;<span class="number">100</span>,&nbsp;<span class="number">1</span>,&nbsp;<span class="string">&quot;hello&quot;</span>,&nbsp;{<span class="string">&#39;u&#39;</span>,&nbsp;<span class="string">&#39;l&#39;</span>}}
 </pre>
 
-We don’t add a texture here, as we just want to have a callback. I could have used a transparent texture, but then, we would add an unseen texture to the rendering, which would kill our performance, when used heavily. I chose to use our String to define, that this is just a rectangle we can click and get our callback. The first character is a `r`: It tells the engine: Just a callback rectangle without a texture is wanted. The following, by a comma separated values are defining width and height. This rectangle is added as object but won’t get added to the draw list. The benefit is, we can send the callback without iterating twice and we save rendering time. 
+We don’t add a texture here, as we just want to have a callback. I could have used a transparent texture, but then, we would add an unseen texture to the rendering, which would kill our performance, when used heavily. I chose to use our string to define, that this is just a rectangle we can click and get our callback. The first character is a `r`: It tells the engine: Just a callback rectangle without a texture is wanted. The following, by a comma separated values are defining width and height. This rectangle is added as object but won’t get added to the draw list. The benefit is, we can send the callback without iterating twice and we save rendering time. 
 
 # How it works – The “Editor Mode” #
 For getting the in-engine editor nearer, I created a so called “editor mode”. You can switch it via pressing `F3`. In this mode we see all the objects (red), walk boxes (green) and zoom lines (blue). To get this displayed I iterate through the scene and save colored rectangles to a list. This list is then added to the GUI draw list, which is like the draw list, but reserved for the GUI. It simply gets drawn after the normal draw list, so our rectangles are always in the foreground. Since it’s pointless to always close and reload the engine when changing the scenes, we can press `Shift+F3` to reload the “Engine.lua” and so the scene. As a bonus, if you failed writing proper Lua, the engine just won’t display anything instead of crashing, unlike in the startup.
