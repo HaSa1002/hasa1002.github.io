@@ -1,4 +1,4 @@
 theme: jekyll-theme-cayman
 title: HaSa's Blog
-description: In Words: Games, Enginedevelopment, Gamedevelopment, C++, Lua, Blog, Student
+description: "In Words: Games, Enginedevelopment, Gamedevelopment, C++, Lua, Blog, Student"
 permalink: /blog/:year/:month/:day/:title/
