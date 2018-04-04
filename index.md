@@ -14,5 +14,8 @@ comments: false
     <small>
     Tags:{% capture tags %} {% for tag in post.tags %}, {{tag}}{% endfor %}{% endcapture %} {{tags | remove_first: ", "}}<br>
     <a class="disqus-comment-count" href={{post.url | append: "#disqus_thread"}} data-disqus-url="{{page.url}}">0 Comments</a></small>
+
+  * * *
+
   </article>
   {% endfor %}
