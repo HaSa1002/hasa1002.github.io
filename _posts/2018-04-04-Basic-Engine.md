@@ -6,7 +6,7 @@ layout: default
 comments: true
 ---
 
-As I said yesterday, today is the moment, I show a lot of the engine of today’s build. It will get technical, but if it gets un-understandable tell me.
+As I said yesterday, today is the moment, I show a bit of the engine of today’s build. It will get technical, but if it gets un-understandable tell me.
 
 # How it works – The Lua Part #
 We have a little Lua to initialize the engine with all the needed tables. If they aren’t existing, the engine is hopelessly lost.
