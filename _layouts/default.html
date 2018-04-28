@@ -56,25 +56,13 @@
       {% endif %}
 
       <footer class="site-footer">
-        <p>This site uses Google Analytics. See <a href="https://policies.google.com/privacy/partners?hl=de">their site</a> to learn more.</p>
         {% if site.github.is_project_page %}
           <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
         {% endif %}
         <span class="site-footer-credits">Hosted on <a href="https://pages.github.com">GitHub Pages</a> for <a href="https://github.com/HaSa1002/">Johannes Witt</a>.</span>
       </footer>
     </section>
-
-    {% if site.google_analytics %}
-      <script type="text/javascript">
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', '{{ site.google_analytics }}', 'auto');
-        ga('send', 'pageview');
-      </script>
-    {% endif %}
+    
     <script id="dsq-count-scr" src="//hasa1002-github-io.disqus.com/count.js" async></script>
   </body>
 </html>
