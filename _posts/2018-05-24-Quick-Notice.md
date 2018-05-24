@@ -12,7 +12,6 @@ See you soon.
 
 Well, I have a qoute for you:
 # End Quote #
-> Besser spät als nie...
-> (Better late then never...)
+> Better late then never...
 > 
 > Unknown
