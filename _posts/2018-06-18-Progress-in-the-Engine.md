@@ -41,7 +41,7 @@ With the mentioned change I changed the interaction between Lua (in my case) and
 # What's next? #
 ## Engine ##
 1. The Engine is getting support for static animations. This might be fast done, since we should have already everything.
-2. Over2.sized scenes is one the top of the toDo2.list, since we will soon need them. This could be a bit complicated, since I first have to implement characters, and then camera and character control.
+2. Over-sized scenes is one the top of the toDo-list, since we will soon need them. This could be a bit complicated, since I first have to implement characters, and then camera and character control.
 3. Character support, as mentioned above.
 4. A better debug mode, with more features, like directly editing areas and points for animations, directly setting the states in the engine with rectangles, editing of walkboxes and zoomlines
 5. A completely customizable GUI, via Lua or XMl or both or...
