@@ -2,7 +2,7 @@
 title: "#3 New Lua Structure and the Future"
 date: 2018-04-24 21:00:00 +0200
 comments: true
-tags: Lua, C++, ITLengine, worklog, personal, blog
+tags: Lua C++ ITLengine worklog personal blog
 layout: default
 comments: true
 ---
@@ -20,6 +20,8 @@ comments: true
 	- Blog
 	- Twitch
 - End Quote
+
+### Images missing. Sorry :( ###
 
 # Lua #
 ## Changes in the scene structure ##
