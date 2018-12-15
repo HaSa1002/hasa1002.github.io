@@ -15,13 +15,13 @@ In C++ we normaly do not have assosiative Arrays. In most cases we just do not n
 1. You have a set of variables which belong together
 2. You do something like that:
 
-```cpp
+{% highlight cpp %}
     std::array<bool, 5> arr;
     arr[0] = true; //Test
     arr[1] = false; //sts
     //..
 
-```
+{% endhighlight %}
 
 As I stated above I usally use them to improve code readability. However there are different methods to achieve this. I will show how to use them and when to decide for what method. I will only show methods with the normal std library. For the sake of demonstation, all value types are `bool`.
 
