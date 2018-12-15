@@ -14,6 +14,7 @@ In C++ we normaly do not have assosiative Arrays. In most cases we just do not n
 
 1. You have a set of variables which belong together
 2. You do something like that:
+
 ```cpp
     std::array<bool, 5> arr;
     arr[0] = true; //Test
@@ -71,7 +72,7 @@ It really depends. If I need a flexible version or the name of the entry is of i
 Remember:
 If you know at compile-time how many items to expect go for the faster `std::array`-approach. However if you do not know use the first. If you do not need the the entries to be written anywhere, you could instead use `std::unordered_map<size_t, bool> arr` and hash the strings with `std::hash<std::string> hs` this way:
 
-```cpp
+```c
 arr[hs("one")] = true;
 arr[hs("two")] = false;
 arr[hs("new")] = true;
