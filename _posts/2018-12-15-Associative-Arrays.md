@@ -15,7 +15,7 @@ In C++ we normaly do not have assosiative Arrays. In most cases we just do not n
 1. You have a set of variables which belong together
 2. You do something like that:
 
-{% highlight cpp %}
+{% highlight c++ %}
     std::array<bool, 5> arr;
     arr[0] = true; //Test
     arr[1] = false; //sts
